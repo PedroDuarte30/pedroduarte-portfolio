@@ -24,33 +24,85 @@
   </head>
   <body>
     <!--Header & Nav-->
-    <header>
-      <header class="header">
-        <nav class="nav container">
-          <a href="#home" class="nav_logo">Pedro Duarte</a>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#home" class="nav_logo">Pedro Duarte</a>
 
-          <div class="nav__menu" id="nav-menu">
-            <ul class="nav_list">
-              <li><a href="#home" class="nav__link">Home</a></li>
-              <li><a href="#about" class="nav__link">About</a></li>
-              <li><a href="#projects" class="nav__link">Projects</a></li>
-              <li><a href="#resume" class="nav__link">Resume</a></li>
-              <li><a href="#contact" class="nav__link">Contact</a></li>
-            </ul>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav_list">
+            <li><a href="#home" class="nav__link">Home</a></li>
+            <li><a href="#about" class="nav__link">About</a></li>
+            <li><a href="#projects" class="nav__link">Projects</a></li>
+            <li><a href="#resume" class="nav__link">Resume</a></li>
+            <li><a href="#contact" class="nav__link">Contact</a></li>
+          </ul>
 
-            <!--Close Button-->
-            <div class="nav__close" id="nav-close">
-              <i class="ri-close-large-line"></i>
+          <!--Close Button-->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-large-line"></i>
+          </div>
+        </div>
+
+        <!--Toggle Menu-->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-line"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!--MAIN-->
+    <main class="main">
+      <!--HOME-->
+      <section class="home section" id="home">
+        <div class="home_container container grid">
+          <div class="home_content">
+            <div class="home_image">
+              <img
+                src="assets/images/avatar1.png"
+                alt="image"
+                class="home_img"
+              />
+            </div>
+
+            <div class="home_social">
+              <a href="" target="_blank" class="home_link">
+                <i class="ri-linkedin-box-fill"></i>
+              </a>
+
+              <a href="" target="_blank" class="home_link">
+                <i class="ri-instagram-fill"></i>
+              </a>
+
+              <a href="" target="_blank" class="home_link">
+                <i class="ri-github-fill"></i>
+              </a>
             </div>
           </div>
+          <div class="home_data grid">
+            <p class="home_subtitle">Hi, I'm a <span id="home-typed"></span></p>
+            <h1 class="home_title">Pedro Duarte</h1>
+            <p class="home_description">
+              Web development student focused on HTML, CSS, and JavaScript, with
+              practical projects published on GitHub. Background in Harvard’s
+              CS50 and currently deepening knowledge in mobile-first design and
+              frontend best practices.
+            </p>
 
-          <!--Toggle Menu-->
-          <div class="nav__toggle" id="nav-toggle">
-            <i class="ri-menu-line"></i>
+            <div class="home_buttons">
+              <a
+                href="assets/pdf/curriculo-pedro-duarte.pdf"
+                download=""
+                target="_blank"
+                class="button"
+                >Download CV</a
+              >
+              <a href="#projects" class="button button_ghost">Projects</a>
+            </div>
           </div>
-        </nav>
-      </header>
-    </header>
+        </div>
+      </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.12/lib/typed.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
   </body>
-  <script src="assets/js/scripts.js"></script>
 </html>
