@@ -1,28 +1,47 @@
 /*Show Menu*/
 const navMenu = document.getElementById('nav-menu');
-      navToggle = document.getElementById('nav-toggle');
-      navClose = document.getElementById('nav-close');
+const navToggle = document.getElementById('nav-toggle');
+const navClose = document.getElementById('nav-close');
 
-/*Menu show*/ 
-if(navToggle){
-    navToggle.addEventListener('click',  () =>{
-        navMenu.classList.add('show-menu')
-    })
+/*Menu show*/
+if (navToggle) {
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.add('show-menu');
+    });
 }
 
 /*Menu Hidden*/
-if(navClose){
+if (navClose) {
     navClose.addEventListener('click', () => {
-        navMenu.classList.remove('show-menu')
-    })
+        navMenu.classList.remove('show-menu');
+    });
 }
 
 /*Remove Menu Mobile*/
-const navLink = document.querySelectorAll('.nav__link')
+const navLink = document.querySelectorAll('.nav__link');
 
-const linkAction = () =>{
-    const navMenu = document.getElementById('nav-menu')
-    //When we click on each nav__link, we remove the show-menu class
-    navMenu.classList.remove('show-menu')
+const linkAction = () => {
+    const navMenu = document.getElementById('nav-menu');
+    navMenu.classList.remove('show-menu');
+};
+navLink.forEach(n => n.addEventListener('click', linkAction));
+
+/*Home Typed JS*/
+const typedHome = new Typed('#home-typed', {
+    strings: ['Web Developer', 'Freelancer', 'Designer'],
+    typeSpeed: 80,
+    backSpeed: 40,
+    backDelay: 2000,
+    loop: true,
+    showCursor: true,
+    cursorChar: '_'
+});
+
+
+/*Add Shadow Header*/
+const shadowHeader = () => {
+    const header = document.getElementById('header')
+    this.scrollY >= 50 ? header.classList.add('shadow-header')
+                       : header.classList.remove('shadow-header')
 }
-navLink.forEach(n => n.addEventlistener('click', linkAction)) 
+window.addEventListener('scroll', shadowHeader)
