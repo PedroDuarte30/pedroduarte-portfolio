@@ -34,14 +34,15 @@ const typedHome = new Typed('#home-typed', {
     backDelay: 2000,
     loop: true,
     showCursor: true,
-    cursorChar: '_'
+    cursorChar: '|'
 });
 
 
 /*Add Shadow Header*/
 const shadowHeader = () => {
-    const header = document.getElementById('header')
-    this.scrollY >= 50 ? header.classList.add('shadow-header')
-                       : header.classList.remove('shadow-header')
+    const header = document.getElementById('header');
+    // Usamos window.scrollY para maior compatibilidade
+    window.scrollY >= 50 ? header.classList.add('shadow-header')
+                         : header.classList.remove('shadow-header');
 }
-window.addEventListener('scroll', shadowHeader)
+window.addEventListener('scroll', shadowHeader);
