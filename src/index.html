@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,7 +10,7 @@
       href="assets/images/favicon-32x32.png"
     />
 
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
 
     <link
       rel="stylesheet"
@@ -29,15 +29,47 @@
   <body>
     <header class="header" id="header">
       <nav class="nav container">
-        <a href="#home" class="nav_logo">Pedro Duarte</a>
+        <a href="#home" class="nav__logo">Pedro Duarte</a>
 
         <div class="nav__menu" id="nav-menu">
-          <ul class="nav_list">
-            <li><a href="#home" class="nav__link">Home</a></li>
-            <li><a href="#about" class="nav__link">About</a></li>
-            <li><a href="#projects" class="nav__link">Projects</a></li>
-            <li><a href="#resume" class="nav__link">Resume</a></li>
-            <li><a href="#contact" class="nav__link">Contact</a></li>
+          <ul class="nav__list">
+            <li>
+              <a href="#home" class="nav__link" aria-label="Go to Home section"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="nav__link"
+                aria-label="Go to About section"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#projects"
+                class="nav__link"
+                aria-label="Go to Projects section"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="#resume"
+                class="nav__link"
+                aria-label="Go to Resume section"
+                >Resume</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="nav__link"
+                aria-label="Go to Contact section"
+                >Contact</a
+              >
+            </li>
           </ul>
 
           <!--Close Button-->
@@ -57,49 +89,68 @@
     <main class="main">
       <!--HOME-->
       <section class="home section" id="home">
-        <div class="home_container container grid">
-          <div class="home_content">
-            <div class="home_image">
+        <div class="home__container container grid">
+          <div class="home__content">
+            <div class="home__image">
               <img
-                src="assets/images/avatar1.png"
-                alt="image"
-                class="home_img"
+                src="../assets/images/avatar1.png"
+                alt="Avatar illustration of Pedro Duarte"
+                class="home__img"
               />
             </div>
 
-            <div class="home_social">
-              <a href="https://www.linkedin.com/in/pedroduarte31/" target="_blank" class="home_link">
+            <div class="home__social">
+              <a
+                href="https://www.linkedin.com/in/pedroduarte31/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="home__link"
+                aria-label="Pedro Duarte LinkedIn profile"
+              >
                 <i class="ri-linkedin-box-fill"></i>
               </a>
 
-              <a href="https://www.instagram.com/__iampedro__/" target="_blank" class="home_link">
+              <a
+                href="https://www.instagram.com/__iampedro__/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="home__link"
+                aria-label="Pedro Duarte Instagram Profile"
+              >
                 <i class="ri-instagram-fill"></i>
               </a>
 
-              <a href="https://github.com/PedroDuarte30" target="_blank" class="home_link">
+              <a
+                href="https://github.com/PedroDuarte30"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="home__link"
+                aria-label="Pedro Duarte Github Profile"
+              >
                 <i class="ri-github-fill"></i>
               </a>
             </div>
           </div>
-          <div class="home_data grid">
-            <p class="home_subtitle">Hi, I'm a <span id="home-typed"></span></p>
-            <h1 class="home_title">Pedro Duarte</h1>
-            <p class="home_description">
+          <div class="home__data grid">
+            <p class="home__subtitle">
+              Hi, I'm a <span class="home__typed"></span>
+            </p>
+            <h1 class="home__title">Pedro Duarte</h1>
+            <p class="home__description">
               Web development student focused on HTML, CSS, and JavaScript, with
               practical projects published on GitHub. Background in Harvard’s
               CS50 and currently deepening knowledge in mobile-first design and
               frontend best practices.
             </p>
 
-            <div class="home_buttons">
+            <div class="home__buttons">
               <a
-                href="assets/pdf/curriculo-pedro-duarte.pdf"
-                download=""
-                target="_blank"
+                href="../assets/pdf/curriculo-pedro-duarte.pdf"
+                download
                 class="button"
                 >Download CV</a
               >
-              <a href="#projects" class="button button_ghost">Projects</a>
+              <a href="#projects" class="button button--ghost">Projects</a>
             </div>
           </div>
         </div>
@@ -118,11 +169,11 @@
                 completed Harvard’s CS50, where I strengthened my programming
                 logic and problem-solving skills.
               </p>
-              <a href="#contact" class="button button_ghost">Contact Me</a>
+              <a href="#contact" class="button button--ghost">Contact Me</a>
             </div>
 
             <div class="about__skills">
-              <h3 class="about__subtitle">Skills</h3>
+              <h3 class="section__title">Skills</h3>
               <ul class="about__items">
                 <li class="about__item">HTML</li>
                 <li class="about__item">CSS</li>
@@ -139,8 +190,8 @@
 
           <div class="about__image">
             <img
-              src="assets/images/avatar1.png"
-              alt="Foto de Pedro Duarte"
+              src="../assets/images/avatar1.png"
+              alt="Pedro Duarte profile illustration"
               class="about__img"
             />
           </div>
@@ -149,6 +200,6 @@
     </main>
 
     <script src="https://unpkg.com/typed.js@2.0.12/lib/typed.min.js"></script>
-    <script src="assets/js/scripts.js"></script>
+    <script src="./js/scripts.js"></script>
   </body>
 </html>
