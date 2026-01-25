@@ -2,7 +2,7 @@
   --header-height: 3.5rem;
 
   --hue: 180;
-  --first-color: hsl(var(--hue), 80%, 48%);
+  --first-color: #FFA500;
   --first-color-alt: hsl(var(--hue), 80%, 44%);
   --white-color: hsl(var(--hue), 8%, 92%);
   --black-color: hsl(var(--hue), 4%, 8%);
