@@ -1,16 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="src/css/styles.css" />
 
-    <link rel="stylesheet" href="../src/css/styles.css" />
+    <link rel="stylesheet" href="src/css/styles.css">
 
     <link
       rel="stylesheet"
@@ -29,6 +24,7 @@
   <body>
     <div class="shape shape__big"></div>
     <div class="shape shape__small"></div>
+
     <header class="header" id="header">
       <nav class="nav container">
         <a href="#home" class="nav__logo">Pedro Duarte</a>
@@ -41,28 +37,24 @@
             <li><a href="#contact" class="nav__link">Contact</a></li>
           </ul>
 
-          <!--Close Button-->
           <div class="nav__close" id="nav-close">
             <i class="ri-close-large-line"></i>
           </div>
         </div>
 
-        <!--Toggle Menu-->
         <div class="nav__toggle" id="nav-toggle">
           <i class="ri-menu-line"></i>
         </div>
       </nav>
     </header>
 
-    <!--MAIN-->
     <main class="main">
-      <!--HOME-->
       <section class="home section" id="home">
         <div class="home__container container grid">
           <div class="home__content">
             <div class="home__image">
               <img
-                src="../assets/images/avatar1.png"
+                src="assets/images/avatar1.png"
                 alt="image"
                 class="home_img"
               />
@@ -76,7 +68,6 @@
               >
                 <i class="ri-linkedin-box-fill"></i>
               </a>
-
               <a
                 href="https://www.instagram.com/__iampedro__/"
                 target="_blank"
@@ -84,7 +75,6 @@
               >
                 <i class="ri-instagram-fill"></i>
               </a>
-
               <a
                 href="https://github.com/PedroDuarte30"
                 target="_blank"
@@ -94,6 +84,7 @@
               </a>
             </div>
           </div>
+
           <div class="home__data grid">
             <p class="home__subtitle">
               Hi, I'm a <span id="home-typed"></span>
@@ -103,17 +94,18 @@
               Web development student focused on HTML, CSS, and JavaScript, with
               practical projects published on GitHub. Background in Harvard’s
               CS50 and currently deepening knowledge in mobile-first design and
-              frontend best practices.
+              frontend best practices
             </p>
 
             <div class="home__buttons">
               <a
-                href="../assets/pdf/curriculo-pedro-duarte.pdf"
+                href="assets/pdf/curriculo-pedro-duarte.pdf"
                 download=""
                 target="_blank"
                 class="button"
-                >Download CV</a
               >
+                Download CV
+              </a>
               <a href="#projects" class="button button__ghost">Projects</a>
             </div>
           </div>
@@ -154,8 +146,8 @@
 
           <div class="about__image">
             <img
-              src="../assets/images/avatar1.png"
-              alt="Foto de Pedro Duarte"
+              src="assets/images/avatar1.png"
+              alt="Pedro Duarte"
               class="about__img"
             />
           </div>
@@ -164,6 +156,6 @@
     </main>
 
     <script src="https://unpkg.com/typed.js@2.0.12/lib/typed.min.js"></script>
-    <script src="../src/js/scripts.js"></script>
+    <script src="src/js/scripts.js"></script>
   </body>
 </html>
