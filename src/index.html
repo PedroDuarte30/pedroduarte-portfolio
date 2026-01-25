@@ -7,7 +7,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="assets/images/favicon-32x32.png"
+      href="../assets/images/favicon-16x16.png"
     />
 
     <link rel="stylesheet" href="./css/styles.css" />
@@ -27,49 +27,18 @@
     <title>Pedro Duarte | Frontend Developer</title>
   </head>
   <body>
+    <div class="shape shape__big"></div>
+    <div class="shape shape__small"></div>
     <header class="header" id="header">
       <nav class="nav container">
         <a href="#home" class="nav__logo">Pedro Duarte</a>
 
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
-            <li>
-              <a href="#home" class="nav__link" aria-label="Go to Home section"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href="#about"
-                class="nav__link"
-                aria-label="Go to About section"
-                >About</a
-              >
-            </li>
-            <li>
-              <a
-                href="#projects"
-                class="nav__link"
-                aria-label="Go to Projects section"
-                >Projects</a
-              >
-            </li>
-            <li>
-              <a
-                href="#resume"
-                class="nav__link"
-                aria-label="Go to Resume section"
-                >Resume</a
-              >
-            </li>
-            <li>
-              <a
-                href="#contact"
-                class="nav__link"
-                aria-label="Go to Contact section"
-                >Contact</a
-              >
-            </li>
+            <li><a href="#home" class="nav__link">Home</a></li>
+            <li><a href="#about" class="nav__link">About</a></li>
+            <li><a href="#projects" class="nav__link">Projects</a></li>
+            <li><a href="#contact" class="nav__link">Contact</a></li>
           </ul>
 
           <!--Close Button-->
@@ -94,8 +63,8 @@
             <div class="home__image">
               <img
                 src="../assets/images/avatar1.png"
-                alt="Avatar illustration of Pedro Duarte"
-                class="home__img"
+                alt="image"
+                class="home_img"
               />
             </div>
 
@@ -103,9 +72,7 @@
               <a
                 href="https://www.linkedin.com/in/pedroduarte31/"
                 target="_blank"
-                rel="noopener noreferrer"
                 class="home__link"
-                aria-label="Pedro Duarte LinkedIn profile"
               >
                 <i class="ri-linkedin-box-fill"></i>
               </a>
@@ -113,9 +80,7 @@
               <a
                 href="https://www.instagram.com/__iampedro__/"
                 target="_blank"
-                rel="noopener noreferrer"
                 class="home__link"
-                aria-label="Pedro Duarte Instagram Profile"
               >
                 <i class="ri-instagram-fill"></i>
               </a>
@@ -123,9 +88,7 @@
               <a
                 href="https://github.com/PedroDuarte30"
                 target="_blank"
-                rel="noopener noreferrer"
                 class="home__link"
-                aria-label="Pedro Duarte Github Profile"
               >
                 <i class="ri-github-fill"></i>
               </a>
@@ -133,7 +96,7 @@
           </div>
           <div class="home__data grid">
             <p class="home__subtitle">
-              Hi, I'm a <span class="home__typed"></span>
+              Hi, I'm a <span id="home-typed"></span>
             </p>
             <h1 class="home__title">Pedro Duarte</h1>
             <p class="home__description">
@@ -146,11 +109,12 @@
             <div class="home__buttons">
               <a
                 href="../assets/pdf/curriculo-pedro-duarte.pdf"
-                download
+                download=""
+                target="_blank"
                 class="button"
                 >Download CV</a
               >
-              <a href="#projects" class="button button--ghost">Projects</a>
+              <a href="#projects" class="button button__ghost">Projects</a>
             </div>
           </div>
         </div>
@@ -169,7 +133,7 @@
                 completed Harvard’s CS50, where I strengthened my programming
                 logic and problem-solving skills.
               </p>
-              <a href="#contact" class="button button--ghost">Contact Me</a>
+              <a href="#contact" class="button button__ghost">Contact Me</a>
             </div>
 
             <div class="about__skills">
@@ -191,7 +155,7 @@
           <div class="about__image">
             <img
               src="../assets/images/avatar1.png"
-              alt="Pedro Duarte profile illustration"
+              alt="Foto de Pedro Duarte"
               class="about__img"
             />
           </div>
