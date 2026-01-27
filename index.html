@@ -3,22 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" sizes="32x32" href="src/css/styles.css" />
-
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
     <link rel="stylesheet" href="src/css/styles.css" />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
     />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
-
     <title>Pedro Duarte | Frontend Developer</title>
   </head>
   <body>
@@ -168,7 +169,7 @@
               <div class="projects__overlay">
                 <h3 class="projects__title">Modern Dropdown Menu</h3>
                 <p class="projects__description">
-                   Responsive navigation with a focus on accessibility.
+                  Responsive navigation with a focus on accessibility.
                 </p>
 
                 <div class="projects__buttons">
@@ -182,7 +183,8 @@
                   <a
                     href="https://pedroduarte30.github.io/dropdown-menu/"
                     target="_blank"
-                    class="projects__link">
+                    class="projects__link"
+                  >
                     <i class="ri-external-link-line"></i> Demo
                   </a>
                 </div>
@@ -213,7 +215,8 @@
                   <a
                     href="https://pedroduarte30.github.io/pricing-card/"
                     target="_blank"
-                    class="projects__link">
+                    class="projects__link"
+                  >
                     <i class="ri-external-link-line"></i> Demo
                   </a>
                 </div>
@@ -244,7 +247,8 @@
                   <a
                     href="https://pedroduarte30.github.io/responsive-cv/"
                     target="_blank"
-                    class="projects__link">
+                    class="projects__link"
+                  >
                     <i class="ri-external-link-line"></i> Demo
                   </a>
                 </div>
@@ -264,7 +268,7 @@
                 <p class="projects__description">
                   Convite elegante com layout adaptável para telemóveis.
                 </p>
-              <div class="projects__buttons">
+                <div class="projects__buttons">
                   <a
                     href="https://github.com/PedroDuarte30/save-the-date"
                     target="_blank"
@@ -275,7 +279,8 @@
                   <a
                     href="https://pedroduarte30.github.io/save-the-date/"
                     target="_blank"
-                    class="projects__link">
+                    class="projects__link"
+                  >
                     <i class="ri-external-link-line"></i> Demo
                   </a>
                 </div>
@@ -284,9 +289,43 @@
           </article>
         </div>
       </section>
-    </main>
+      
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contact Me</h2>
 
+        <div class="contact__container container grid">
+          <form action="" class="contact__form grid" id="contact-form">
+            <input type="text" placeholder="Name" name="user_name" required class="contact__input">
+            <input type="text" placeholder="Email" name="user_email" required class="contact__input">
+            <textarea placeholder="Message" name="user_message" class="contact__input contact__area"></textarea>
+            <button type="submit" class="button">Send Message</button>
+            <p class="contact__message" id="contact-message"></p>
+          </form>
+
+          <div class="contact__content grid">
+            <div class="contact__data grid">
+              <address class="contact__address">
+                <i class="ri-mail-fill"></i>
+                <span>info.pedroduarte@gmail.com</span>
+              </address>
+              <address class="contact__address">
+                <i class="ri-smartphone-fill"></i>
+                <span>912 840 507</span>
+              </address>
+              <address class="contact__address">
+                <i class="ri-map-pin-fill"></i>
+                <span>Alcobaça, Portugal</span>
+              </address>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      
+    </main>
     <script src="https://unpkg.com/typed.js@2.0.12/lib/typed.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="src/js/scripts.js"></script>
   </body>
 </html>
