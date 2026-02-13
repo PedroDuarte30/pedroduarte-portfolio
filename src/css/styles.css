@@ -1,6 +1,6 @@
 @import url(./variables.css);
 
-/* ==================== BASE & RESET ==================== */
+/*BASE & RESET*/
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -47,7 +47,7 @@ img {
   height: auto;
 }
 
-/* ==================== REUSABLE CLASSES ==================== */
+/*REUSABLE CLASSES*/
 .container {
   max-width: 1120px;
   margin-inline: 1.5rem;
@@ -70,7 +70,7 @@ img {
   margin-top: 2rem;
 }
 
-/* ==================== HEADER & NAV ==================== */
+/*HEADER & NAV*/
 .header {
   position: fixed;
   width: 100%;
@@ -147,7 +147,7 @@ img {
   box-shadow: 0 2px 16px hsla(0, 0%, 0%, 0.5);
 }
 
-/* ==================== HOME ==================== */
+/*HOME*/
 .home {
   position: relative;
   overflow: hidden;
@@ -228,7 +228,7 @@ img {
   margin-top: 2rem;
 }
 
-/* ==================== BUTTON ==================== */
+/*BUTTON*/
 .button {
   display: inline-flex;
   justify-content: center;
@@ -252,7 +252,7 @@ img {
   border: 2px solid var(--first-color);
 }
 
-/* ==================== ABOUT ==================== */
+/*ABOUT*/
 .about__container {
   row-gap: 3.5rem;
   align-items: center;
@@ -313,7 +313,7 @@ img {
   transform: translateY(-3px);
 }
 
-/* ==================== PROJECTS ==================== */
+/* PROJECTS*/
 .projects__container {
   display: grid;
   gap: 2rem;
@@ -409,7 +409,7 @@ img {
   color: var(--black-color);
 }
 
-/* ==================== CONTACTS ==================== */
+/*CONTACTS*/
 
 .contact__ container {
   row-gap: 4rem;
@@ -478,7 +478,7 @@ img {
   color: var(--first-color);
 }
 
-/* ==================== SHAPES ==================== */
+/*SHAPES*/
 .shape {
   position: fixed;
   border: 3px solid var(--first-color);
@@ -515,7 +515,39 @@ img {
   }
 }
 
-/* ==================== MEDIA QUERIES ==================== */
+.main-footer {
+  background-color: #1a1a1a; 
+  font-size: var(--h3-font-size);
+  color: #ffffff;
+  padding: 2rem 0;
+  text-align: center;
+  border-top: 1px solid #333;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: var(--gray-color);
+}
+
+.social-links a {
+  color: var(--gray-color); 
+  font-size: var(--h3-font-size);
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--first-color);
+  text-decoration: underline;
+}
+
+/*MEDIA QUERIES */
 @media screen and (max-width: 320px) {
   .container {
     margin-inline: 1rem;
@@ -548,11 +580,10 @@ img {
   .home__container,
   .about__container, 
   .projects__container,
-  /* Removi o contact daqui para o tratar abaixo com espaçamento próprio */
   .contact__content { 
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    column-gap: 3rem; /* Garante que o espaço entre colunas é igual em todo o site */
+    column-gap: 3rem; 
   }
 
   .home__data,
@@ -562,7 +593,7 @@ img {
   }
 
   .section__title {
-    margin-inline: 0; /* MUDANÇA: 'auto' centra o título, '0' alinha-o à esquerda com o texto */
+    margin-inline: 0; 
     max-width: 100%;
   }
 
@@ -571,12 +602,11 @@ img {
     justify-content: flex-start;
   }
 
-  /* Contacto precisa de uma regra à parte para não esticar o formulário verticalmente */
   .contact__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 3rem;
-    align-items: start; /* Formulário e texto começam no topo */
+    align-items: start;
   }
 }
 
