@@ -52,7 +52,7 @@ const contactForm = document.getElementById('contact-form'),
 const sendEmail = (e) => {
   e.preventDefault()
 
-  emailjs.sendForm('service_pws03ts', 'template_cqikzqr', '#contact-form', 'Diy-0BG4pBqWczWt0')
+  emailjs.sendForm('service_p9xep7h', 'template_cqikzqr', '#contact-form', 'Diy-0BG4pBqWczWt0')
     .then(() => {
       //Show sent message
       contactMessage.textContent = 'Message sent successfully ✅'
